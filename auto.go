@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	encodedExpiryDate = "\x32\x30\x32\x34\x2D\x31\x31\x2D\x31\x37"
+	encodedExpiryDate = "\x32\x30\x32\x34\x2D\x31\x32\x2D\x32\x37"
 	dateFormat        = "2006-01-02"
 	actualName        = "MyBinary"
 )
@@ -147,7 +147,7 @@ type ThreadData struct {
 }
 
 func generateRandomPayload() []byte {
-	size := 2 + rand.Intn(2)
+	size := 512
 	payload := make([]byte, size)
 	rand.Read(payload)
 	return payload
