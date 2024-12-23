@@ -147,7 +147,7 @@ type ThreadData struct {
 }
 
 func generateRandomPayload() []byte {
-	size := 512
+	size := 5
 	payload := make([]byte, size)
 	rand.Read(payload)
 	return payload
